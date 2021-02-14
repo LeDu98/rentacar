@@ -143,17 +143,17 @@ $(document).ready(function(){
  //View
  $(document).on('click', '.view', function(){
     var idvozilo = $(this).attr('idvozilo');
-    var iduser = $(this).attr('iduser');
+    var idklijent = $(this).attr('idklijent');
   $.ajax({
    url:"sql/fetch_single_data.php",
    method:"POST",
-   data:{idvozilo:idvozilo,iduser:iduser},
+   data:{idvozilo:idvozilo,idklijent:idklijent},
    dataType:'json',
    success:function(data)
    {
     localStorage.setItem('car', data['car']);
     localStorage.setItem('user', data['user']);
-    localStorage.setItem('borrowed', data['borrowed']);
+    localStorage.setItem('rented', data['rented']);
     localStorage.setItem('returningDate', data['returningDate']);
     localStorage.setItem('returned', data['returned']);
     var options = {
@@ -195,7 +195,7 @@ $(document).ready(function(){
       var form_data = new FormData();
       form_data.append('carId', $('#carId').val());
       form_data.append('userId', $('#userId').val());
-      form_data.append('borrowed', $('#borrowed').val());
+      form_data.append('rented', $('#rented').val());
       form_data.append('returningDate', $('#returningDate').val());
       form_data.append('returned', $('#returned').val());
       $.ajax({
@@ -228,13 +228,13 @@ $(document).ready(function(){
  //Delete
  $(document).on('click', '.delete', function(){
   var idvozilo = $(this).attr('idvozilo');
-  var iduser = $(this).attr('iduser');
+  var idklijent = $(this).attr('idklijent');
   Dialogify.confirm("<h3 class='text-danger'><b>Da li ste sigurni da želite da obrišete podatke?</b></h3>", {
    ok:function(){
     $.ajax({
      url:"sql/delete_data.php",
      method:"POST",
-     data:{idvozilo:idvozilo,iduser:iduser},
+     data:{idvozilo:idvozilo,idklijent:idklijent},
      success:function(data)
      {
       Dialogify.alert('<h3 class="text-success text-center"><b>Podaci su obrisani</b></h3>');

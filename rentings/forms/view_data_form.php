@@ -14,7 +14,7 @@
  <label>Datum iznajmljivanja:</label>
 </div>
 <div class="form-group">
-    <label id="borrowed"><i>Test</i></label>
+    <label id="rented"><i>Test</i></label>
 </div>
 <div class="form-group">
  <label>Datum vraćanja:</label>
@@ -35,7 +35,7 @@
 
   document.getElementById('book').innerHTML =localStorage.getItem('book');
   document.getElementById('user').innerHTML =localStorage.getItem('user');
-  document.getElementById('borrowed').innerHTML =localStorage.getItem('borrowed');
+  document.getElementById('rented').innerHTML =localStorage.getItem('rented');
   document.getElementById('returningDate').innerHTML =localStorage.getItem('returningDate');
   document.getElementById('returned').innerHTML =localStorage.getItem('returned');
 

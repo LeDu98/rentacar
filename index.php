@@ -39,7 +39,7 @@
                     <a class="nav-link" href="car/carPage.php">Vozila</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="borrowings/borrowingsPage.php">Iznajmljivanja</a>
+                    <a class="nav-link" href="rentings/rentingsPage.php">Iznajmljivanja</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">O nama</a>

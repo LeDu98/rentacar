@@ -1,10 +1,10 @@
 <?php
 
-class Borrowings implements JsonSerializable
+class Rentings implements JsonSerializable
 {
     private $carId;
     private $userId;
-    private $borrowed;
+    private $rented;
     private $returningDate;
     private $returned;
 
@@ -16,7 +16,7 @@ class Borrowings implements JsonSerializable
         return array(
             'car' => $this->carId,
             'user' => $this->userId,
-            'borrowed' => $this->borrowed,
+            'rented' => $this->rented,
             'returningDate' => $this->returningDate,
             'returned' => $this->returned,
        );
@@ -40,12 +40,12 @@ class Borrowings implements JsonSerializable
         $this->userId = $userId;
     }
 
-    public function getBorrowed(){
-        return $this->borrowed;
+    public function getRented(){
+        return $this->rented;
     }
 
-    public function setBorrowed($borrowed){
-        $this->borrowed = $borrowed;
+    public function setRented($rented){
+        $this->rented = $rented;
     }
 
     public function getReturningDate(){

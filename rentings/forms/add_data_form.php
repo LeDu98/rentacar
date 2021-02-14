@@ -8,7 +8,7 @@
 </div>
 <div class="form-group">
  <label>Unesite datum iznajmljivanja</label>
- <input type="datetime-local" name="borrowed" id="borrowed" class="form-control" />
+ <input type="datetime-local" name="rented" id="rented" class="form-control" />
 </div>
 <div class="form-group">
  <label>Unesite datum vraćanja</label>

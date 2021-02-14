@@ -37,7 +37,7 @@
       <li><a href="../">Početna stranica</a></li>
         <li class="active"><a href="#">Klijenti</a></li>
         <li><a href="../car/carPage.php">Vozila</a></li>
-        <li><a href="../borrowings/borrowingsPage.php">Iznajmljivanja</a></li>
+        <li><a href="../rentings/rentingsPage.php">Iznajmljivanja</a></li>
         <li><a href="#">O nama</a></li>
       </ul>
     </div>

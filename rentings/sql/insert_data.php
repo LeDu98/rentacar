@@ -33,13 +33,13 @@ if(isset($_POST["idvozilo"]))
  }
 
 
- if(empty($_POST["borrowed"]))
+ if(empty($_POST["rented"]))
  {
   $error .= '<p>Niste uneli datum iznajmljivanja</p>';
  }
  else
  {
-  $datumod = $_POST["borrowed"];
+  $datumod = $_POST["rented"];
  }
 
  if(empty($_POST["returningDate"]))
