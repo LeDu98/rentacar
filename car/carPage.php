@@ -120,6 +120,7 @@
 </html>
 
 <script type="text/javascript" language="javascript" >
+//prikaz tabele
 $(document).ready(function(){
  
  var dataTable = $('#user_data').DataTable({
@@ -138,6 +139,8 @@ $(document).ready(function(){
   ],
 
  });
+
+//pregled
 
  $(document).on('click', '.view', function(){
     var id = $(this).attr('id');
@@ -168,6 +171,8 @@ $(document).ready(function(){
   })
  });
  
+ //dodavanje novog vozila 
+
  $('#add_data').click(function(){
 
   var options = {
@@ -219,6 +224,8 @@ $(document).ready(function(){
     }
    ]).showModal();
  });
+
+ //azuriranje podataka o vozilu
 
  $(document).on('click', '.update', function(){
   var id = $(this).attr('id');
@@ -283,6 +290,8 @@ $(document).ready(function(){
   })
  });
 
+ //brisanje vozila
+ 
  $(document).on('click', '.delete', function(){
   var id = $(this).attr('id');
   Dialogify.confirm("<h3 class='text-danger'><b>Da li ste sigurni da želite da obrišete vozilo?</b></h3>", {
