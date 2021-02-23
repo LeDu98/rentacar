@@ -2,7 +2,7 @@
  <label>Vozilo ID:</label>
 </div>
 <div class="form-group">
-    <label id="book"><i>Test</i></label>
+    <label id="car"><i>Test</i></label>
 </div>  
 <div class="form-group">
  <label>Klijent ID:</label>
@@ -33,7 +33,7 @@
 <script>
  $(document).ready(function () {
 
-  document.getElementById('book').innerHTML =localStorage.getItem('book');
+  document.getElementById('car').innerHTML =localStorage.getItem('car');
   document.getElementById('user').innerHTML =localStorage.getItem('user');
   document.getElementById('rented').innerHTML =localStorage.getItem('rented');
   document.getElementById('returningDate').innerHTML =localStorage.getItem('returningDate');
