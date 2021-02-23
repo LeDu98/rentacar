@@ -64,9 +64,7 @@
                     <h1 class="display-2">Dobro došli</h1>
                     <h3>Rent a car po najpristupačnijim cenama</h3>
                     
-                    <button type="button" class="btn btn-primary btn-lg">
-                        Pogledajte dostupne automobile
-                    </button>
+                    
                 </div>
             </div>
             <div class="carousel-item">
